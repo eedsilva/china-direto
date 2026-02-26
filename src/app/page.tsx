@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { Scale, BarChart3, Handshake, Search, Factory, Compass } from "lucide-react";
+import Image from "next/image";
 export default function Home() {
   useEffect(() => {
     // Navbar scroll
@@ -36,14 +37,15 @@ export default function Home() {
       {/*  ─── NAV ───  */}
       <nav id="navbar">
         <a href="#hero" className="nav-logo">
-          <svg className="nav-logo-ship" viewBox="0 0 40 40" fill="none">
-            <path d="M8 28 C8 28 12 32 20 32 C28 32 32 28 32 28 L30 22 L10 22 Z" fill="#770b0c" />
-            <rect x="17" y="10" width="3" height="12" fill="#770b0c" />
-            <rect x="11" y="14" width="8" height="8" fill="#770b0c" />
-            <rect x="20" y="16" width="7" height="6" fill="#770b0c" />
-            <path d="M20 9 C22 9 24 10 24 12 L20 12 Z" fill="#770b0c" opacity="0.6" />
-            <path d="M6 28 Q20 34 34 28" stroke="#770b0c" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-          </svg>
+          <Image
+            src="/nav-logo-7-cropped.png"
+            alt="China Direta Logo"
+            width={215}
+            height={238}
+            className="nav-logo-ship"
+            quality={100}
+            priority
+          />
           <div className="nav-logo-text">CHINA<br />DIRETA</div>
         </a>
         <ul className="nav-links">
