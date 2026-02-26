@@ -62,8 +62,9 @@
     }
 
     .nav-logo-ship {
-      width: 32px;
-      height: 32px;
+      height: 48px;
+      width: auto;
+      object-fit: contain;
     }
 
     .nav-logo-text {
@@ -889,6 +890,27 @@
       nav.scrolled { padding: 0.7rem 1.5rem; }
       .nav-links { display: none; }
 
+      .hero-ctas {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+      }
+
+      .btn-primary, .btn-ghost {
+        width: 100%;
+        text-align: center;
+      }
+
+      .scroll-indicator {
+        bottom: 3rem;
+      }
+
+      .hero-stripe {
+        height: 150px;
+        bottom: -60px;
+        transform: rotate(-5deg);
+      }
+
       .what-grid,
       .forwhom-inner,
       .investment-grid { grid-template-columns: 1fr; }
@@ -913,7 +935,7 @@
 
       .forwhom-inner::after { display: none; }
 
-      #hero { padding: 7rem 1.5rem 5rem; }
+      #hero { padding: 7rem 1.5rem 8rem; }
       #what, #how, #cta { padding: 6rem 0; }
       #forwhom, #learning, #investment { padding: 6rem 0; }
     }
