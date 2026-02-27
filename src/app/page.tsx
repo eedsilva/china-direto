@@ -2,6 +2,8 @@
 import { useEffect } from "react";
 import { Scale, BarChart3, Handshake, Search, Factory, Compass } from "lucide-react";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/next"
+
 export default function Home() {
   useEffect(() => {
     // Navbar scroll
