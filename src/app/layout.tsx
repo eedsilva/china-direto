@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Cormorant_Garamond, Noto_Serif_SC } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -36,6 +37,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="scroll-smooth">
       <body className={`${cinzel.variable} ${cormorant.variable} ${notoSerifSC.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
